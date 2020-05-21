@@ -11,3 +11,4 @@ package.json
 .idea
 *.iml
 bauhaus/settings.py
+runserver.sh
