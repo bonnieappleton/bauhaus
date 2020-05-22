@@ -1,6 +1,8 @@
+@import 'variables';
+
 body {
-  color: #000000;
-  background-color: #F3F4F6;
+  color: $color-black;
+  background-color: $color-grey;
   font-family: helvetica, sans-serif;
   font-size: 16px;
   font-weight: 100;
@@ -8,4 +10,3 @@ body {
   max-width: 1200px;
 }
 
-/*# sourceMappingURL=global.css.map */
