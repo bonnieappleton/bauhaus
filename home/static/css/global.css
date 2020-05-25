@@ -8,4 +8,46 @@ body {
   max-width: 1200px;
 }
 
+.button {
+  height: 38px;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.button--orange {
+  background-color: #FF5200;
+}
+
+.header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background-color: #262626;
+  height: 130px;
+}
+.header__logo {
+  height: 130px;
+}
+.header__logo img {
+  height: 130px;
+}
+.header__button-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=global.css.map */

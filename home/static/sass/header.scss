@@ -1,1 +1,31 @@
+@import 'variables';
 
+$header-height: 130px;
+
+.header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+  background-color: #262626;
+  height: $header-height;
+
+  &__logo {
+    height: $header-height;
+
+    img {
+      height: $header-height;
+    }
+  }
+
+  &__button-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    padding: 20px;
+  }
+}

@@ -14,8 +14,13 @@
 
 <body>
 
-    <header>
-
+    <header class="header">
+        <a class="header__logo" href="{% url 'home' %}">
+            <img alt="bauhaus consultancy" src="{% static 'img/bauhaus-large-banner-2_001.jpeg' %}"/>
+        </a>
+        <div class="header__button-container">
+            <a class="button button--orange" href="">Contact Us</a>
+        </div>
     </header>
 
     {% block mainpage %}{% endblock %}

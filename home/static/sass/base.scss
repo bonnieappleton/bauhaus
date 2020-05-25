@@ -10,3 +10,23 @@ body {
   max-width: 1200px;
 }
 
+.button {
+  height: 38px;
+  color: $color-white;
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  &--orange {
+    background-color: $color-orange;
+  }
+}
