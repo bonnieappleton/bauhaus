@@ -5,14 +5,32 @@ body {
   font-size: 16px;
   font-weight: 100;
   margin: auto;
-  max-width: 1200px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 10px 0 30px;
+}
+
+p {
+  font-size: 18px;
+  color: #555555;
 }
 
 .button {
   height: 38px;
   color: #ffffff;
   font-size: 20px;
-  margin: 15px;
   padding: 10px 15px;
   text-decoration: none;
   text-align: center;
@@ -27,19 +45,23 @@ body {
   background-color: #FF5200;
 }
 
+.round-image {
+  border-radius: 50%;
+}
+
 .header {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  background-color: #262626;
-  height: 130px;
+  background-color: #ffffff;
+  height: 100px;
 }
 .header__logo {
-  height: 130px;
+  height: 100px;
 }
 .header__logo img {
-  height: 130px;
+  height: 100px;
 }
 .header__button-container {
   display: -webkit-flex;
@@ -47,7 +69,71 @@ body {
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 20px;
+  padding: 35px;
+}
+
+.feature-image-section {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 20px;
+  height: 530px;
+  color: #ffffff;
+  background: url("../img/procore-app.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content-section {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.contact-section {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.section-image {
+  max-width: 50%;
+}
+
+.text-block {
+  padding: 20px 60px;
+}
+.text-block--center {
+  text-align: center;
+  max-width: 40%;
+}
+
+.about-me-section {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
 }
 
 /*# sourceMappingURL=global.css.map */

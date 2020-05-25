@@ -19,11 +19,12 @@
             <img alt="bauhaus consultancy" src="{% static 'img/bauhaus-large-banner-2_001.jpeg' %}"/>
         </a>
         <div class="header__button-container">
-            <a class="button button--orange" href="">Contact Us</a>
+            <a class="button button--orange" href="{% url 'contact' %}">Contact Us</a>
         </div>
     </header>
 
     {% block mainpage %}{% endblock %}
+
 </body>
 
 </html>
