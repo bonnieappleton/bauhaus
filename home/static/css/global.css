@@ -136,4 +136,17 @@ p {
   padding: 80px 20px;
 }
 
+footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background-color: #555555;
+  padding: 15px;
+}
+footer p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=global.css.map */
