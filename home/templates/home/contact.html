@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% block page_title %}Contact{% endblock %}
+
+{% block mainpage %}
+<section class="">
+
+    <form class="contact-form" role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button class="button button--yellow button--full" type="submit">Submit</button>
+    </form>
+
+</section>
+{% endblock %}

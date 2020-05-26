@@ -1,0 +1,21 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% block page_title %}Contact{% endblock %}
+
+{% block mainpage %}
+<section class="section section--narrow">
+    <div class="row row--title">
+        <h2 class="title title--section">Success!</h2>
+        <a class="button button--mint" href="{% url 'home' %}">Back to homepage</a>
+    </div>
+    <div class="row">
+        <div class="text">
+            <p>
+                Thank you for your email, I will be in touch as soon as possible.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}
