@@ -1,6 +1,14 @@
 @import 'variables';
 
-$header-height: 100px;
+@font-face{
+  font-family: 'thiamine';
+  src: url('../font/thiamine-webfont.woff') format('woff');
+}
+
+$header-height: 160px;
+$orange-stripe-height: 125px;
+$white-stripe-height: 127px;
+
 
 .header {
   display: -webkit-flex;
@@ -8,14 +16,39 @@ $header-height: 100px;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 
-  background-color: $color-white;
   height: $header-height;
 
-  &__logo {
-    height: $header-height;
+  background: linear-gradient(
+                  180deg,
+                  $color-orange,
+                  $color-orange $orange-stripe-height,
+                  $color-white $orange-stripe-height,
+                  $color-white $white-stripe-height,
+                  $color-slate $white-stripe-height);
+  border-bottom: solid $color-white 2px;
 
-    img {
-      height: $header-height;
+  &__logo {
+    display: -webkit-flex;
+    display: flex;
+
+    height: $header-height;
+    padding: 0 20px;
+
+    &__img {
+      height: $header-height - 24px;
+    }
+
+    &__subheading {
+      display: -webkit-flex;
+      -webkit-align-items: flex-end;
+
+      align-items: flex-end;
+      display: flex;
+
+      font-family: Futura, Helvetica, sans-serif;
+      color: $color-steel;
+      font-weight: bold;
+      margin: 4px 40px
     }
   }
 
