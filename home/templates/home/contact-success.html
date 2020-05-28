@@ -5,17 +5,13 @@
 {% block page_title %}Contact{% endblock %}
 
 {% block mainpage %}
-<section class="section section--narrow">
-    <div class="row row--title">
+<section class="contact-section">
+    <div class="contact-form">
         <h2 class="title title--section">Success!</h2>
-        <a class="button button--mint" href="{% url 'home' %}">Back to homepage</a>
-    </div>
-    <div class="row">
-        <div class="text">
-            <p>
-                Thank you for your email, I will be in touch as soon as possible.
-            </p>
-        </div>
+        <p>
+            Thank you for your email, I will be in touch as soon as possible.
+        </p>
+        <a class="button" href="{% url 'home' %}">Back to homepage</a>
     </div>
 </section>
 {% endblock %}

@@ -22,5 +22,6 @@ class Contact(FormView):
         send_mail(subject, message, sender, recipients)
         return super(Contact, self).form_valid(form)
 
+
 class ContactSuccess(TemplateView):
     template_name = 'home/contact-success.html'
