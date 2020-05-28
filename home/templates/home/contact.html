@@ -5,9 +5,11 @@
 {% block page_title %}Contact{% endblock %}
 
 {% block mainpage %}
-<section class="">
+<section class="contact-section">
 
     <form class="contact-form" role="form" action="" method="post">
+        <h2>Contact Us</h2>
+        <p>Get in touch for a free consultation on how your business can get the best out of Procore</p>
         {% csrf_token %}
         {{ form }}
         <button class="button button--yellow button--full" type="submit">Submit</button>

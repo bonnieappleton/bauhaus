@@ -1,10 +1,23 @@
+html, body {
+  height: 100%;
+}
+
 body {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   color: #000000;
   background-color: #F3F4F6;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 100;
   margin: auto;
+}
+
+section {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
 }
 
 h2 {
@@ -124,7 +137,7 @@ a {
   background-color: #ffffff;
 }
 
-.contact-section {
+.procore-section {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   -webkit-align-items: center;
@@ -171,6 +184,41 @@ footer {
 footer p {
   font-size: 12px;
   color: #ffffff;
+}
+
+.contact-section {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  -webkit-align-self: center;
+  align-self: center;
+  background: url("../img/welding.jpg") no-repeat;
+  background-size: cover;
+  width: 80%;
+  margin: 44px;
+}
+
+.contact-form {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 400px;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 40px;
+}
+.contact-form h2, .contact-form p {
+  text-align: center;
+}
+.contact-form input, .contact-form textarea {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=global.css.map */

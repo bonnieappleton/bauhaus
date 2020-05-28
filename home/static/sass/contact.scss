@@ -1,0 +1,47 @@
+@import "variables";
+
+
+.contact-section {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  -webkit-align-self: center;
+  align-self: center;
+
+  background: url('../img/welding.jpg') no-repeat;
+  background-size: cover;
+  width: 80%;
+  margin: 44px;
+
+}
+
+.contact-form {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  max-width: 400px;
+  height: 100%;
+  background-color: $color-white;
+  padding: 40px;
+
+
+
+  h2, p {
+    text-align: center;
+  }
+
+  input, textarea {
+    margin-bottom: 20px;
+  }
+}
