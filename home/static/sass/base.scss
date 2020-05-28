@@ -75,6 +75,7 @@ a {
   &:hover {
     color: $color-orange;
     background-color: transparent;
+    cursor: pointer;
   }
 
   &--white-border {

@@ -66,6 +66,7 @@ a {
 .button:hover {
   color: #FF5200;
   background-color: transparent;
+  cursor: pointer;
 }
 .button--white-border {
   border-color: #ffffff;
