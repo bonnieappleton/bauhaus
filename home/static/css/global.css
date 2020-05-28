@@ -52,11 +52,14 @@ a {
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
-  display: flex;
   display: -webkit-flex;
-  flex-direction: column;
   -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #FF5200;
   border: solid #FF5200 2px;
 }
@@ -201,6 +204,7 @@ footer p {
   background-size: cover;
   width: 80%;
   margin: 44px;
+  border-radius: 15px 16px 16px 15px;
 }
 
 .contact-form {
@@ -213,12 +217,19 @@ footer p {
   height: 100%;
   background-color: #ffffff;
   padding: 40px;
+  border-radius: 0 15px 15px 0;
 }
 .contact-form h2, .contact-form p {
   text-align: center;
 }
+.contact-form label {
+  margin-bottom: 5px;
+}
 .contact-form input, .contact-form textarea {
   margin-bottom: 20px;
+  background-color: #F3F4F6;
+  border: none;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=global.css.map */

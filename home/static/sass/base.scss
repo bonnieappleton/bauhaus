@@ -59,11 +59,15 @@ a {
   text-align: center;
   border-radius: 4px;
 
-  display: flex;
   display: -webkit-flex;
-  flex-direction: column;
   -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   background-color: $color-orange;
   border: solid $color-orange 2px;
