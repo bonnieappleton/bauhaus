@@ -122,12 +122,13 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 100px 20px 270px 20px;
   height: 530px;
   color: #ffffff;
   background: url("../img/procore-app.jpg") no-repeat;
   background-size: cover;
 }
+
 .content-section {
   display: -webkit-flex;
   -webkit-flex-direction: row;
