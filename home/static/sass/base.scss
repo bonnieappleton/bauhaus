@@ -53,16 +53,23 @@ a {
   background-color: $color-orange;
   border: solid $color-orange 2px;
 
-  &--white-border {
-    border-color: $color-white;
-  }
-
   &:hover {
     color: $color-orange;
-    background-color: $color-white;
+    background-color: transparent;
   }
+
+  &--white-border {
+    border-color: $color-white;
+    &:hover {
+      background-color: $color-white;
+    }
+  }
+
+
 }
 
 .round-image {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 }

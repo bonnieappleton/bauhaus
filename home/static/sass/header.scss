@@ -1,13 +1,8 @@
 @import 'variables';
 
-@font-face{
-  font-family: 'thiamine';
-  src: url('../font/thiamine-webfont.woff') format('woff');
-}
-
 $header-height: 160px;
-$orange-stripe-height: 125px;
-$white-stripe-height: 127px;
+$orange-stripe-height: 126px;
+$white-stripe-height: 129px;
 
 
 .header {
@@ -25,7 +20,7 @@ $white-stripe-height: 127px;
                   $color-white $orange-stripe-height,
                   $color-white $white-stripe-height,
                   $color-slate $white-stripe-height);
-  border-bottom: solid $color-white 2px;
+  border-bottom: solid $color-white 3px;
 
   &__logo {
     display: -webkit-flex;
@@ -48,17 +43,11 @@ $white-stripe-height: 127px;
       font-family: Futura, Helvetica, sans-serif;
       color: $color-steel;
       font-weight: bold;
-      margin: 4px 40px
+      margin: 5px 40px
     }
   }
 
   &__button-container {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-justify-content: center;
-    justify-content: center;
-
-    padding: 35px;
+    padding: 33px;
   }
 }

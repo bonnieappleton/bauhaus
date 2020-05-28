@@ -47,30 +47,31 @@ a {
   background-color: #FF5200;
   border: solid #FF5200 2px;
 }
+.button:hover {
+  color: #FF5200;
+  background-color: transparent;
+}
 .button--white-border {
   border-color: #ffffff;
 }
-.button:hover {
-  color: #FF5200;
+.button--white-border:hover {
   background-color: #ffffff;
 }
 
 .round-image {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 }
 
-@font-face {
-  font-family: "thiamine";
-  src: url("../font/thiamine-webfont.woff") format("woff");
-}
 .header {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   height: 160px;
-  background: linear-gradient(180deg, #FF5200, #FF5200 125px, #ffffff 125px, #ffffff 127px, #282828 127px);
-  border-bottom: solid #ffffff 2px;
+  background: linear-gradient(180deg, #FF5200, #FF5200 126px, #ffffff 126px, #ffffff 129px, #282828 129px);
+  border-bottom: solid #ffffff 3px;
 }
 .header__logo {
   display: -webkit-flex;
@@ -89,15 +90,10 @@ a {
   font-family: Futura, Helvetica, sans-serif;
   color: #898B8E;
   font-weight: bold;
-  margin: 4px 40px;
+  margin: 5px 40px;
 }
 .header__button-container {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding: 35px;
+  padding: 33px;
 }
 
 .feature-image-section {
