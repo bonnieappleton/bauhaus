@@ -11,26 +11,41 @@
   align-items: flex-start;
   justify-content: center;
 
-  padding: 100px 20px 270px 20px;
+  padding: 100px $side-gutter 270px;
   height: 530px;
   color: $color-white;
-  background: url('../img/procore-app.jpg') no-repeat;
   background-size: cover;
+  background: url('../img/procore-app.jpg') no-repeat top;
+
+  h2, h4 {
+    width: 50%;
+    text-shadow: 2px 2px 4px $color-black;
+  }
 }
 
 .content-section {
   display: -webkit-flex;
   -webkit-flex-direction: row;
-  -webkit-align-items: center;
+  -webkit-align-items: stretch;
   -webkit-justify-content: space-between;
 
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   flex-direction: row;
 
   background-color: $color-white;
 
+
+  &--reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  
+  @media only screen and (max-width: $break-small-tablet) {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .procore-section {
@@ -44,19 +59,30 @@
   align-items: center;
   justify-content: center;
 
-  padding: 80px 20px;
+  padding: 80px $side-gutter;
+  text-align: center;
 }
 
 .section-image {
   max-width: 50%;
+  object-fit: cover;
+
+  @media only screen and (max-width: $break-small-tablet) {
+    max-width: 100%;
+  }
+
 }
 
 .text-block {
-  padding: 20px 60px;
+  padding: 50px $side-gutter;
+
+  h3 {
+    margin-top: 0;
+  }
 
   &--center {
     text-align: center;
-    max-width: 40%;
+    max-width: 900px;
   }
 }
 
@@ -70,6 +96,4 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding: 80px 20px;
 }

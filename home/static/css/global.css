@@ -122,23 +122,37 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 100px 20px 270px 20px;
+  padding: 100px 60px 270px;
   height: 530px;
   color: #ffffff;
-  background: url("../img/procore-app.jpg") no-repeat;
   background-size: cover;
+  background: url("../img/procore-app.jpg") no-repeat top;
+}
+.feature-image-section h2, .feature-image-section h4 {
+  width: 50%;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .content-section {
   display: -webkit-flex;
   -webkit-flex-direction: row;
-  -webkit-align-items: center;
+  -webkit-align-items: stretch;
   -webkit-justify-content: space-between;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   flex-direction: row;
   background-color: #ffffff;
+}
+.content-section--reverse {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+  .content-section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .procore-section {
@@ -150,19 +164,29 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px;
+  padding: 80px 60px;
+  text-align: center;
 }
 
 .section-image {
   max-width: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+  .section-image {
+    max-width: 100%;
+  }
 }
 
 .text-block {
-  padding: 20px 60px;
+  padding: 50px 60px;
+}
+.text-block h3 {
+  margin-top: 0;
 }
 .text-block--center {
   text-align: center;
-  max-width: 40%;
+  max-width: 900px;
 }
 
 .about-me-section {
@@ -174,7 +198,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px;
 }
 
 footer {
@@ -201,7 +224,7 @@ footer p {
   justify-content: center;
   -webkit-align-self: center;
   align-self: center;
-  background: url("../img/welding.jpg") no-repeat;
+  background: url("../img/welding.jpg") no-repeat top;
   background-size: cover;
   width: 80%;
   margin: 44px;
@@ -213,7 +236,6 @@ footer p {
   -webkit-flex-direction: column;
   display: flex;
   flex-direction: column;
-  width: 40%;
   max-width: 400px;
   height: 100%;
   background-color: #ffffff;
@@ -231,6 +253,13 @@ footer p {
   background-color: #F3F4F6;
   border: none;
   padding: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    max-width: none;
+    border-radius: 15px;
+    align-self: stretch;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
