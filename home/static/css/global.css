@@ -99,6 +99,9 @@ a {
 .header__logo__img {
   height: 136px;
 }
+.header__logo__img--mobile {
+  display: none;
+}
 .header__logo__subheading {
   display: -webkit-flex;
   -webkit-align-items: flex-end;
@@ -108,6 +111,17 @@ a {
   color: #898B8E;
   font-weight: bold;
   margin: 5px 40px;
+}
+@media only screen and (max-width: 480px) {
+  .header__logo__img--mobile {
+    display: unset;
+  }
+  .header__logo__img--desktop {
+    display: none;
+  }
+  .header__logo__subheading {
+    display: none;
+  }
 }
 .header__button-container {
   padding: 33px;

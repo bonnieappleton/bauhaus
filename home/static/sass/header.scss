@@ -31,6 +31,10 @@ $white-stripe-height: 129px;
 
     &__img {
       height: $header-height - 24px;
+
+      &--mobile {
+        display: none;
+      }
     }
 
     &__subheading {
@@ -45,6 +49,24 @@ $white-stripe-height: 129px;
       font-weight: bold;
       margin: 5px 40px
     }
+
+    @media only screen and (max-width: $break-large-phone) {
+      &__img {
+        &--mobile {
+          display: unset;
+        }
+
+        &--desktop {
+          display: none;
+        }
+      }
+
+      &__subheading {
+        display: none;
+      }
+
+    }
+
   }
 
   &__button-container {

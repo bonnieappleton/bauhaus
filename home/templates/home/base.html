@@ -18,11 +18,12 @@
 
     <header class="header">
         <a class="header__logo" href="{% url 'home' %}">
-            <img alt="bauhaus" class="header__logo__img" src="{% static 'img/bauhaus.png' %}">
+            <img alt="bauhaus" class="header__logo__img header__logo__img--desktop" src="{% static 'img/bauhaus-desktop.png' %}">
+            <img alt="bauhaus" class="header__logo__img header__logo__img--mobile" src="{% static 'img/bauhaus-mobile.png' %}">
             <div class="header__logo__subheading">CONSULTANCY</div>
         </a>
         <div class="header__button-container">
-            <a class="button button--white-border" href="{% url 'contact' %}">Contact</a>
+            <a class="button button--white-border" href="{% url 'contact' %}">Contact Us</a>
         </div>
     </header>
 
