@@ -29,21 +29,37 @@ section {
 h2 {
   font-size: 60px;
   margin: 20px 0;
+
+  @media only screen and (max-width: $break-large-phone) {
+    font-size: 50px;
+  }
 }
 
 h3 {
   font-size: 44px;
+
+  @media only screen and (max-width: $break-large-phone) {
+    font-size: 40px;
+  }
 }
 
 h4 {
   font-size: 30px;
   font-weight: 100;
   margin: 10px 0 30px;
+
+  @media only screen and (max-width: $break-large-phone) {
+    font-size: 25px;
+  }
 }
 
 p {
   font-size: 18px;
   color: $color-concrete;
+
+  @media only screen and (max-width: $break-large-phone) {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -85,6 +101,9 @@ a {
     }
   }
 
+  @media only screen and (max-width: $break-large-phone) {
+    font-size: 16px;
+  }
 
 }
 

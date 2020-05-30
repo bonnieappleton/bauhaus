@@ -50,6 +50,12 @@ $white-stripe-height: 129px;
       margin: 5px 40px
     }
 
+    @media only screen and (max-width: $break-small-tablet) {
+      &__subheading {
+        display: none;
+      }
+    }
+
     @media only screen and (max-width: $break-large-phone) {
       &__img {
         &--mobile {
@@ -59,10 +65,6 @@ $white-stripe-height: 129px;
         &--desktop {
           display: none;
         }
-      }
-
-      &__subheading {
-        display: none;
       }
 
     }
