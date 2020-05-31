@@ -12,6 +12,8 @@
     <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}" />
 
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+    <link href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet" as="style">
 </head>
 
 <body>
@@ -30,11 +32,11 @@
     {% block mainpage %}{% endblock %}
 
     <footer class="footer">
-        <p>
-            Copyright Bauhaus Consultancy </br>
-            <a href="{% url 'contact' %}">Contact us</a>
-        </p>
-        <img src="https://placekitten.com/50/50">
+        <div class="footer__bauhaus">
+            <p>Copyright Bauhaus Consultancy </p>
+            <p><a href="{% url 'contact' %}">Contact us</a></p>
+            <a class="footer__social-icon" target="_blank" href="https://uk.linkedin.com/in/andrewxenith/de"><span class="fab fa-linkedin fa-fw"></span></a>
+        </div>
         <p>Website by <a href="https://www.bonnieappleton.com">Bonnie Appleton</a></p>
     </footer>
 </body>

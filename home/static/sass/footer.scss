@@ -1,16 +1,54 @@
 @import "variables";
 
-footer {
+.footer {
   display: -webkit-flex;
-  display: flex;
   -webkit-justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   background-color: $color-slate;
-  padding: 15px;
+  text-align: center;
+
+  a {
+    color: $color-steel;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
 
   p {
     font-size: 12px;
-    color: $color-white;
+    color: $color-grey;
+    margin: 15px;
+
+  }
+
+  &__bauhaus {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__social-icon {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 32px;
+    margin: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
