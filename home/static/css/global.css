@@ -24,7 +24,7 @@ h2 {
   font-size: 60px;
   margin: 20px 0;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   h2 {
     font-size: 50px;
   }
@@ -33,7 +33,7 @@ h2 {
 h3 {
   font-size: 44px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   h3 {
     font-size: 40px;
   }
@@ -44,7 +44,7 @@ h4 {
   font-weight: 100;
   margin: 10px 0 30px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   h4 {
     font-size: 25px;
   }
@@ -54,7 +54,7 @@ p {
   font-size: 18px;
   color: #555555;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   p {
     font-size: 14px;
   }
@@ -94,7 +94,7 @@ a {
 .button--white-border:hover {
   background-color: #ffffff;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .button {
     font-size: 16px;
   }
@@ -137,12 +137,29 @@ a {
   font-weight: bold;
   margin: 5px 40px;
 }
+.header__button-container {
+  padding: 33px;
+}
+
 @media only screen and (max-width: 768px) {
   .header__logo__subheading {
     display: none;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
+  .header {
+    height: 127px;
+    background: linear-gradient(180deg, #FF5200, #FF5200 103px, #ffffff 103px, #ffffff 105px, #282828 105px);
+    border-bottom: none;
+  }
+  .header__logo__img {
+    height: 110px;
+  }
+  .header__button-container {
+    padding: 21px 21px 0 0;
+  }
+}
+@media only screen and (max-width: 420px) {
   .header__logo__img--mobile {
     display: unset;
   }
@@ -150,10 +167,6 @@ a {
     display: none;
   }
 }
-.header__button-container {
-  padding: 33px;
-}
-
 .feature-image-section {
   display: -webkit-flex;
   -webkit-flex-direction: column;
@@ -178,7 +191,7 @@ a {
   object-fit: cover;
   width: 100%;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .feature-image-section {
     -webkit-align-items: center;
     align-items: center;
@@ -231,7 +244,7 @@ a {
   padding: 80px 60px;
   text-align: center;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .procore-section {
     padding: 50px 20px;
   }
@@ -257,7 +270,7 @@ a {
   text-align: center;
   max-width: 900px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .text-block {
     padding: 50px 20px;
   }

@@ -4,6 +4,10 @@ $header-height: 160px;
 $orange-stripe-height: 126px;
 $white-stripe-height: 129px;
 
+$header-height-mobile: 127px;
+$orange-stripe-height-mobile: 103px;
+$white-stripe-height-mobile: 105px;
+
 
 .header {
   display: -webkit-flex;
@@ -30,7 +34,7 @@ $white-stripe-height: 129px;
     padding: 0 20px;
 
     &__img {
-      height: $header-height - 24px;
+      height: 136px;
 
       &--mobile {
         display: none;
@@ -50,28 +54,64 @@ $white-stripe-height: 129px;
       margin: 5px 40px
     }
 
-    @media only screen and (max-width: $break-small-tablet) {
-      &__subheading {
-        display: none;
-      }
-    }
-
-    @media only screen and (max-width: $break-large-phone) {
-      &__img {
-        &--mobile {
-          display: unset;
-        }
-
-        &--desktop {
-          display: none;
-        }
-      }
-
-    }
-
   }
 
   &__button-container {
     padding: 33px;
   }
 }
+
+@media only screen and (max-width: $break-small-tablet) {
+  .header {
+    &__logo {
+      &__subheading {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $break-large-phone) {
+  .header {
+
+    height: $header-height-mobile;
+
+    background: linear-gradient(
+                    180deg,
+                    $color-orange,
+                    $color-orange $orange-stripe-height-mobile,
+                    $color-white $orange-stripe-height-mobile,
+                    $color-white $white-stripe-height-mobile,
+                    $color-slate $white-stripe-height-mobile);
+    border-bottom: none;
+
+    &__logo {
+      &__img {
+        height: 110px;
+
+
+      }
+    }
+
+    &__button-container {
+      padding: 21px 21px 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-small-phone) {
+ .header {
+   &__logo {
+     &__img {
+       &--mobile {
+         display: unset;
+       }
+
+       &--desktop {
+         display: none;
+       }
+     }
+   }
+ }
+}
+
