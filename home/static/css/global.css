@@ -1,5 +1,6 @@
-html, body {
-  height: 100%;
+html,
+body {
+  min-height: 100vh;
 }
 
 body {
@@ -327,8 +328,10 @@ footer p {
 .contact-form {
   display: -webkit-flex;
   -webkit-flex-direction: column;
+  -webkit-flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   max-width: 400px;
   height: 100%;
   background-color: #ffffff;

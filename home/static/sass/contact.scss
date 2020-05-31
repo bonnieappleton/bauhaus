@@ -32,9 +32,11 @@ $border-radius-second: $border-radius + 1;
 .contact-form {
   display: -webkit-flex;
   -webkit-flex-direction: column;
+  -webkit-flex-grow: 1;
 
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   max-width: 400px;
   height: 100%;
