@@ -314,8 +314,14 @@ footer p {
   background: url("../img/welding.jpg") no-repeat top;
   background-size: cover;
   width: 80%;
-  margin: 44px;
+  margin: 60px;
   border-radius: 15px 16px 16px 15px;
+}
+@media only screen and (max-width: 420px) {
+  .contact-section {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .contact-form {
@@ -346,6 +352,11 @@ footer p {
     max-width: none;
     border-radius: 15px;
     align-self: stretch;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .contact-form {
+    border-radius: 0;
   }
 }
 

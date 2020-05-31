@@ -20,8 +20,13 @@ $border-radius-second: $border-radius + 1;
   background: url('../img/welding.jpg') no-repeat top;
   background-size: cover;
   width: 80%;
-  margin: 44px;
+  margin: $side-gutter;
   border-radius: $border-radius $border-radius-second $border-radius-second $border-radius;
+
+  @media only screen and (max-width: $break-small-phone) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .contact-form {
@@ -56,5 +61,9 @@ $border-radius-second: $border-radius + 1;
     max-width: none;
     border-radius: $border-radius;
     align-self: stretch;
+  }
+
+  @media only screen and (max-width: $break-small-phone) {
+    border-radius: 0;
   }
 }
