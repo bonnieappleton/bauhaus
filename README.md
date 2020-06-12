@@ -1,4 +1,4 @@
-Website for Bauhaus Consulting Ltd
+Website for Bauhaus Consultancy Ltd
 
 
 
