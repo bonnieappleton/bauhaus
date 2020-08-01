@@ -86,11 +86,28 @@
   align-items: center;
   justify-content: center;
 
-  padding: 80px $side-gutter;
   text-align: center;
+  padding: 60px 0;
 
-  @media only screen and (max-width: $break-large-phone) {
-    padding: 50px $side-gutter-mobile;
+  @media only screen and (max-width: $break-small-tablet) {
+    padding: 0;
+  }
+}
+
+.video {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 60px;
+  padding-bottom: 56.25%;
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 

@@ -1,6 +1,7 @@
 {% extends 'home/base.html' %}
 
 {% load static %}
+{% load embed_video_tags %}
 
 {% block page_title %}Home{% endblock %}
 
@@ -15,8 +16,33 @@
 
 
     <section class="procore-section">
-        <h3>We help you get the most out of Procore</h3>
-        <a class="button" href="https://www.procore.com/en-gb" target="_blank">Visit Procore</a>
+        <div class="text-block text-block--center">
+            <h3>We help you get the most out of Procore</h3>
+
+            <div class="video">
+                <iframe class="video__inner"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/E0BmtOMwxGk"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <p>
+                Procore is a single cloud-based software platform that manages your projects, resources and financials
+                from project planning to closeout. The platform connects every project contributor to solutions built
+                specifically for this industry—for the owner, for the general contractor, and for the specialty
+                contractor.
+            </p>
+            <p>
+                Their App Marketplace has over 150 partner solutions that integrate seamlessly with Procore, giving you
+                the freedom to connect with what works best for you. The ability to easily communicate across disparate
+                teams makes it easier to work together by eliminating silos and establishing a single source of
+                information. It's how Procore gives your team access to everything they need to know to get their job
+                done.
+            </p>
+        </div>
     </section>
 
     <section class="content-section">
