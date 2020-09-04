@@ -183,7 +183,7 @@ a {
   padding: 100px 60px 270px;
   height: 530px;
   color: #ffffff;
-  background: url("../img/procore-app.jpg") no-repeat top;
+  background: #ffffff url("../img/procore-app.jpg") no-repeat top;
   background-size: cover;
 }
 .feature-image-section h2, .feature-image-section h4 {
@@ -195,12 +195,16 @@ a {
   object-fit: cover;
   width: 100%;
 }
+.feature-image-section--narrow {
+  background-image: url("../img/stairs.jpg");
+  height: 200px;
+}
 @media only screen and (max-width: 570px) {
   .feature-image-section {
     -webkit-align-items: center;
     align-items: center;
     padding: 50px 20px;
-    background: none;
+    background-image: none;
     height: unset;
     color: #000000;
     text-align: center;
@@ -236,7 +240,7 @@ a {
   }
 }
 
-.procore-section {
+.centered-section {
   display: -webkit-flex;
   -webkit-flex-direction: column;
   -webkit-align-items: center;
@@ -249,7 +253,7 @@ a {
   padding: 60px 0;
 }
 @media only screen and (max-width: 768px) {
-  .procore-section {
+  .centered-section {
     padding: 0;
   }
 }
